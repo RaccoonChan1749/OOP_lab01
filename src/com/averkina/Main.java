@@ -64,7 +64,7 @@ public class Main {
 
                         switch (type) {
                             case 1 -> typeName = "walking";
-                            case 2 ->typeName = "cycling";
+                            case 2 -> typeName = "cycling";
                             case 3 -> typeName = "transit";
                             case 4 -> typeName = "driving";
                             case 5 -> typeName = "flights";
