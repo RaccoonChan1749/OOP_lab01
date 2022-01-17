@@ -26,7 +26,7 @@ public class Main {
             System.out.printf("------------------------------------------");
             System.out.printf("\nТекущий способ перемещения: %s",typeName);
             System.out.printf("\nМеню:");
-            System.out.printf("\n1.Выбрать способ перемещения (по умолчанию пешком)");
+            System.out.printf("\n1.Выбрать способ перемещения");
             System.out.printf("\n2.Отправиться");
             System.out.printf("\n3.Выход");
             System.out.printf("\nВведите пункт меню: ");
@@ -63,24 +63,13 @@ public class Main {
                         }
 
                         switch (type) {
-                            case (1): //пешком
-                                typeName = "walking";
-                                break;
-                            case (2): //на велосипеде
-                                typeName = "cycling";
-                                break;
-                            case (3): //на общественном транспорте
-                                typeName = "transit";
-                                break;
-                            case (4): //на автомобиле
-                                typeName = "driving";
-                                break;
-                            case (5): //на самолете
-                                typeName = "flights";
-                                break;
+                            case 1 -> typeName = "walking";
+                            case 2 ->typeName = "cycling";
+                            case 3 -> typeName = "transit";
+                            case 4 -> typeName = "driving";
+                            case 5 -> typeName = "flights";
                         }
                         way = new Context(typeName);
-
                         in.nextLine();
                         menu = 0;
                     }
@@ -90,7 +79,6 @@ public class Main {
                     }
                     System.out.printf("------------------------------------------\n");
                 }
-
             }
 
             if(menu == 2) {
